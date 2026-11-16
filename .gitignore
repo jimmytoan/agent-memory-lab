@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+data/
+results/raw/
+.DS_Store
+results/mem0_history.db
+results/proxy.log

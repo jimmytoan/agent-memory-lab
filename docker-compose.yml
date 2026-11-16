@@ -1,0 +1,37 @@
+# Own project, container, volume and network names. Bring down ONLY with:
+#   docker compose -p agentmemlab down        (add -v to drop this lab's volumes)
+name: agentmemlab
+services:
+  pg:
+    image: pgvector/pgvector:0.8.1-pg17
+    container_name: agentmemlab-pg
+    environment: {POSTGRES_USER: lab, POSTGRES_PASSWORD: lab, POSTGRES_DB: lab}
+    ports: ["127.0.0.1:55432:5432"]
+    volumes: [agentmemlab-pg:/var/lib/postgresql/data]
+    mem_limit: 1g
+  neo4j:
+    image: neo4j:5.26-community
+    container_name: agentmemlab-neo4j
+    environment:
+      NEO4J_AUTH: neo4j/agentmemlab
+      NEO4J_server_memory_heap_initial__size: 512m
+      NEO4J_server_memory_heap_max__size: 1g
+      NEO4J_server_memory_pagecache_size: 512m
+    ports: ["127.0.0.1:57474:7474", "127.0.0.1:57687:7687"]
+    volumes: [agentmemlab-neo4j:/data]
+    mem_limit: 2500m
+  letta:
+    image: letta/letta:0.15.1
+    container_name: agentmemlab-letta
+    env_file: .env            # API keys only; never printed
+    environment:
+      ANTHROPIC_BASE_URL: http://host.docker.internal:8177/anthropic
+      OPENAI_API_BASE: http://host.docker.internal:8177/openai/v1
+      OPENAI_BASE_URL: http://host.docker.internal:8177/openai/v1
+      GEMINI_API_KEY: ""
+      LETTA_UVICORN_WORKERS: "1"
+    ports: ["127.0.0.1:58283:8283"]
+    volumes: [agentmemlab-letta:/var/lib/postgresql/data]
+    mem_limit: 3g
+volumes: {agentmemlab-pg: {}, agentmemlab-neo4j: {}, agentmemlab-letta: {}}
+networks: {default: {name: agentmemlab-net}}

@@ -1,0 +1,195 @@
+full-context  knowledge-update         3ba21379           OK  ingest     0.0s $0.0000 | query   2.4s $0.0036 | gold='Ford F-150 pickup truck' got='Ford F-150 pickup truck'
+full-context  knowledge-update         4b24c848           OK  ingest     0.0s $0.0000 | query   1.7s $0.0030 | gold='five' got='5'
+full-context  knowledge-update         71315a70           OK  ingest     0.0s $0.0000 | query   2.7s $0.0031 | gold='10-12 hours' got='10-12 hours'
+full-context  knowledge-update         08e075c7           OK  ingest     0.0s $0.0000 | query   1.6s $0.0032 | gold='9 months' got='9 months'
+full-context  temporal-reasoning       gpt4_fe651585      OK  ingest     0.0s $0.0000 | query   2.4s $0.0038 | gold='Alex' got='Alex'
+full-context  temporal-reasoning       gpt4_b5700ca0      OK  ingest     0.0s $0.0000 | query   2.5s $0.0033 | gold='the Episcopal Church' got='The Episcopal Church'
+full-context  temporal-reasoning       gpt4_7a0daae1      no  ingest     0.0s $0.0000 | query   2.8s $0.0028 | gold='1 week' got='1'
+full-context  temporal-reasoning       b9cfe692           OK  ingest     0.0s $0.0000 | query   2.0s $0.0028 | gold='5.5 weeks' got='5.5 weeks'
+full-context  multi-session            21d02d0d           OK  ingest     0.0s $0.0000 | query   3.4s $0.0030 | gold='2' got='2'
+full-context  multi-session            gpt4_372c3eed      OK  ingest     0.0s $0.0000 | query   3.9s $0.0042 | gold='10 years' got='10 years'
+full-context  multi-session            gpt4_2ba83207      no  ingest     0.0s $0.0000 | query   6.3s $0.0033 | gold='Thrive Market' got='Walmart'
+full-context  multi-session            b5ef892d           no  ingest     0.0s $0.0000 | query   2.5s $0.0036 | gold='8 days.' got='8'
+full-context  single-session-user      e01b8e2f           OK  ingest     0.0s $0.0000 | query   2.3s $0.0035 | gold='Hawaii' got='Hawaii'
+full-context  single-session-user      60d45044           OK  ingest     0.0s $0.0000 | query   2.0s $0.0028 | gold='Japanese short-grain rice' got='Japanese short-grain rice'
+full-context  single-session-user      19b5f2b3           OK  ingest     0.0s $0.0000 | query   2.1s $0.0028 | gold='two weeks' got='Two weeks'
+full-context  single-session-assistant dc439ea3           OK  ingest     0.0s $0.0000 | query   2.8s $0.0022 | gold='Hoop Dance' got='Hoop Dance'
+full-context  single-session-assistant 7a8d0b71           OK  ingest     0.0s $0.0000 | query   1.8s $0.0027 | gold='$2,000' got='$2,000'
+full-context  abstention               19b5f2b3_abs       OK  ingest     0.0s $0.0000 | query   2.6s $0.0029 | gold='You did not mention this infor' got='NOT_ENOUGH_INFO'
+full-context  abstention               gpt4_70e84552_abs  OK  ingest     0.0s $0.0000 | query   2.7s $0.0032 | gold='The information provided is no' got='NOT_ENOUGH_INFO'
+full-context  abstention               982b5123_abs       OK  ingest     0.0s $0.0000 | query   2.9s $0.0040 | gold='The information provided is no' got='NOT_ENOUGH_INFO'
+pgvector-rag  knowledge-update         3ba21379           OK  ingest     1.2s $0.0004 | query   2.3s $0.0014 | gold='Ford F-150 pickup truck' got='Ford F-150 pickup truck'
+pgvector-rag  knowledge-update         4b24c848           OK  ingest     0.8s $0.0004 | query   1.6s $0.0008 | gold='five' got='5'
+pgvector-rag  knowledge-update         71315a70           OK  ingest     0.7s $0.0004 | query   1.5s $0.0011 | gold='10-12 hours' got='10-12 hours'
+pgvector-rag  knowledge-update         08e075c7           OK  ingest     0.5s $0.0004 | query   1.6s $0.0009 | gold='9 months' got='9 months'
+pgvector-rag  temporal-reasoning       gpt4_fe651585      OK  ingest     0.6s $0.0005 | query   7.5s $0.0015 | gold='Alex' got='Alex'
+pgvector-rag  temporal-reasoning       gpt4_b5700ca0      OK  ingest     0.6s $0.0004 | query   3.8s $0.0009 | gold='the Episcopal Church' got='The Episcopal Church'
+pgvector-rag  temporal-reasoning       gpt4_7a0daae1      OK  ingest     0.6s $0.0003 | query   2.2s $0.0011 | gold='1 week' got='1 week'
+pgvector-rag  temporal-reasoning       b9cfe692           OK  ingest     0.5s $0.0004 | query   2.9s $0.0009 | gold='5.5 weeks' got='5.5 weeks (38.5 days)'
+pgvector-rag  multi-session            21d02d0d           no  ingest     0.5s $0.0004 | query   3.8s $0.0011 | gold='2' got='1'
+pgvector-rag  multi-session            gpt4_372c3eed      no  ingest     0.5s $0.0005 | query   3.5s $0.0013 | gold='10 years' got='10'
+pgvector-rag  multi-session            gpt4_2ba83207      no  ingest     0.6s $0.0004 | query   4.7s $0.0011 | gold='Thrive Market' got='Publix'
+pgvector-rag  multi-session            b5ef892d           no  ingest     0.5s $0.0004 | query   2.6s $0.0011 | gold='8 days.' got='5'
+pgvector-rag  single-session-user      e01b8e2f           OK  ingest     0.6s $0.0004 | query   2.1s $0.0011 | gold='Hawaii' got='Hawaii'
+pgvector-rag  single-session-user      60d45044           OK  ingest     0.6s $0.0003 | query   1.3s $0.0010 | gold='Japanese short-grain rice' got='Japanese short-grain rice'
+pgvector-rag  single-session-user      19b5f2b3           OK  ingest     0.5s $0.0004 | query   1.9s $0.0008 | gold='two weeks' got='Two weeks'
+pgvector-rag  single-session-assistant dc439ea3           OK  ingest     0.5s $0.0003 | query   1.6s $0.0005 | gold='Hoop Dance' got='Hoop Dance'
+pgvector-rag  single-session-assistant 7a8d0b71           OK  ingest     0.6s $0.0003 | query   1.4s $0.0009 | gold='$2,000' got='$2,000'
+pgvector-rag  abstention               19b5f2b3_abs       OK  ingest     0.5s $0.0004 | query   2.5s $0.0011 | gold='You did not mention this infor' got='NOT_ENOUGH_INFO'
+pgvector-rag  abstention               gpt4_70e84552_abs  OK  ingest     0.5s $0.0004 | query   2.5s $0.0012 | gold='The information provided is no' got='NOT_ENOUGH_INFO'
+pgvector-rag  abstention               982b5123_abs       OK  ingest     0.5s $0.0005 | query   1.9s $0.0010 | gold='The information provided is no' got='NOT_ENOUGH_INFO'
+mem0          knowledge-update         3ba21379           OK  ingest   106.2s $0.0248 | query   2.4s $0.0003 | gold='Ford F-150 pickup truck' got='Ford F-150 pickup truck'
+mem0          knowledge-update         4b24c848           OK  ingest    95.2s $0.0228 | query   1.9s $0.0002 | gold='five' got='5'
+mem0          knowledge-update         71315a70           OK  ingest    87.1s $0.0229 | query   1.8s $0.0002 | gold='10-12 hours' got='10-12 hours'
+mem0          knowledge-update         08e075c7           OK  ingest    80.2s $0.0220 | query   1.9s $0.0003 | gold='9 months' got='9 months'
+mem0          temporal-reasoning       gpt4_fe651585      no  ingest    96.7s $0.0247 | query   2.5s $0.0003 | gold='Alex' got='Rachel'
+mem0          temporal-reasoning       gpt4_b5700ca0      OK  ingest    85.4s $0.0223 | query   3.3s $0.0004 | gold='the Episcopal Church' got='The Episcopal Church'
+mem0          temporal-reasoning       gpt4_7a0daae1      OK  ingest    77.0s $0.0211 | query   1.7s $0.0002 | gold='1 week' got='1 week'
+mem0          temporal-reasoning       b9cfe692           OK  ingest    97.8s $0.0238 | query   2.4s $0.0004 | gold='5.5 weeks' got='About 5.5 weeks'
+mem0          multi-session            21d02d0d           no  ingest    79.7s $0.0214 | query   4.9s $0.0005 | gold='2' got='1'
+mem0          multi-session            gpt4_372c3eed      OK  ingest    90.3s $0.0236 | query   3.4s $0.0004 | gold='10 years' got='10 years'
+mem0          multi-session            gpt4_2ba83207      no  ingest    92.0s $0.0230 | query   4.0s $0.0005 | gold='Thrive Market' got='Walmart'
+mem0          multi-session            b5ef892d           no  ingest   100.1s $0.0243 | query   2.6s $0.0004 | gold='8 days.' got='8'
+mem0          single-session-user      e01b8e2f           OK  ingest    93.8s $0.0235 | query   5.8s $0.0003 | gold='Hawaii' got='Hawaii'
+mem0          single-session-user      60d45044           OK  ingest    79.3s $0.0215 | query   1.3s $0.0002 | gold='Japanese short-grain rice' got='Japanese short-grain rice'
+mem0          single-session-user      19b5f2b3           OK  ingest    82.0s $0.0218 | query   2.6s $0.0003 | gold='two weeks' got='Two weeks'
+mem0          single-session-assistant dc439ea3           OK  ingest    75.6s $0.0203 | query   3.1s $0.0004 | gold='Hoop Dance' got='Hoop Dance'
+mem0          single-session-assistant 7a8d0b71           OK  ingest    90.3s $0.0228 | query   2.0s $0.0003 | gold='$2,000' got='$2,000'
+mem0          abstention               19b5f2b3_abs       OK  ingest    79.4s $0.0219 | query   2.2s $0.0003 | gold='You did not mention this infor' got='NOT_ENOUGH_INFO'
+mem0          abstention               gpt4_70e84552_abs  OK  ingest    94.9s $0.0235 | query   2.9s $0.0004 | gold='The information provided is no' got='NOT_ENOUGH_INFO'
+mem0          abstention               982b5123_abs       OK  ingest   106.1s $0.0262 | query   2.0s $0.0003 | gold='The information provided is no' got='NOT_ENOUGH_INFO'
+letta         knowledge-update         3ba21379           no  ingest    78.6s $0.0500 | query   2.4s $0.0025 | gold='Ford F-150 pickup truck' got='Ford F-150 pickup (1/25 scale)'
+letta         knowledge-update         4b24c848           OK  ingest    71.5s $0.0469 | query   5.8s $0.0063 | gold='five' got='5'
+letta         knowledge-update         71315a70           OK  ingest    66.2s $0.0463 | query   3.7s $0.0044 | gold='10-12 hours' got='10-12 hours'
+letta         knowledge-update         08e075c7           OK  ingest    62.3s $0.0443 | query   6.2s $0.0089 | gold='9 months' got='9 months'
+letta         temporal-reasoning       gpt4_fe651585      OK  ingest    67.0s $0.0494 | query   6.6s $0.0058 | gold='Alex' got='Alex'
+letta         temporal-reasoning       gpt4_b5700ca0      OK  ingest    72.4s $0.0469 | query   5.6s $0.0049 | gold='the Episcopal Church' got='The Episcopal Church'
+letta         temporal-reasoning       gpt4_7a0daae1      no  ingest    57.3s $0.0396 | query   4.9s $0.0041 | gold='1 week' got='NOT_ENOUGH_INFO'
+letta         temporal-reasoning       b9cfe692           OK  ingest    76.5s $0.0383 | query   4.7s $0.0023 | gold='5.5 weeks' got='About 5.5 weeks (roughly 2.5 weeks + 3 w'
+letta         multi-session            21d02d0d           no  ingest    92.5s $0.0516 | query   8.2s $0.0064 | gold='2' got='1'
+letta         multi-session            gpt4_372c3eed      no  ingest    82.3s $0.0464 | query   4.5s $0.0035 | gold='10 years' got='10'
+letta         multi-session            gpt4_2ba83207      no  ingest    70.6s $0.0423 | query   5.8s $0.0049 | gold='Thrive Market' got='Walmart'
+letta         multi-session            b5ef892d           no  ingest   109.2s $0.0555 | query   6.1s $0.0065 | gold='8 days.' got='8'
+letta         single-session-user      e01b8e2f           OK  ingest   104.7s $0.0555 | query   4.4s $0.0063 | gold='Hawaii' got="Hawaii's Big Island"
+letta         single-session-user      60d45044           OK  ingest    68.9s $0.0403 | query   4.1s $0.0040 | gold='Japanese short-grain rice' got='Japanese short-grain rice'
+letta         single-session-user      19b5f2b3           OK  ingest    63.5s $0.0389 | query   3.8s $0.0046 | gold='two weeks' got='Two weeks'
+letta         single-session-assistant dc439ea3           no  ingest    63.5s $0.0415 | query   8.0s $0.0095 | gold='Hoop Dance' got='NOT_ENOUGH_INFO'
+letta         single-session-assistant 7a8d0b71           OK  ingest    90.8s $0.0482 | query   3.8s $0.0030 | gold='$2,000' got='$2,000'
+letta         abstention               19b5f2b3_abs       OK  ingest    56.5s $0.0389 | query   4.5s $0.0057 | gold='You did not mention this infor' got='NOT_ENOUGH_INFO'
+letta         abstention               gpt4_70e84552_abs  OK  ingest    80.8s $0.0445 | query   5.3s $0.0062 | gold='The information provided is no' got='NOT_ENOUGH_INFO'
+letta         abstention               982b5123_abs       OK  ingest    69.6s $0.0408 | query   4.8s $0.0087 | gold='The information provided is no' got='NOT_ENOUGH_INFO'
+graphiti      knowledge-update         3ba21379           OK  ingest    91.0s $0.0833 | query   2.1s $0.0004 | gold='Ford F-150 pickup truck' got='Ford F-150 pickup truck'
+graphiti      knowledge-update         4b24c848           OK  ingest    95.6s $0.0745 | query   1.8s $0.0004 | gold='five' got='5'
+graphiti      knowledge-update         71315a70           OK  ingest    97.2s $0.0709 | query   1.9s $0.0004 | gold='10-12 hours' got='10-12 hours'
+graphiti      knowledge-update         08e075c7           OK  ingest    83.5s $0.0631 | query   2.6s $0.0003 | gold='9 months' got='9 months'
+graphiti      temporal-reasoning       gpt4_fe651585      no  ingest    74.4s $0.0720 | query   2.9s $0.0004 | gold='Alex' got='NOT_ENOUGH_INFO'
+Retrying after error (attempt 1/2): Internal Server Error
+Retrying after error (attempt 2/2): Internal Server Error
+Max retries (2) exceeded. Last error: Internal Server Error
+anthropic.InternalServerError: Internal Server Error
+graphiti      temporal-reasoning       gpt4_b5700ca0      ERR ingest     0.0s $0.0012 | query   0.0s $0.0000 | gold='the Episcopal Church' got=''
+Retrying after error (attempt 1/2): Internal Server Error
+Retrying after error (attempt 2/2): Internal Server Error
+Max retries (2) exceeded. Last error: Internal Server Error
+anthropic.InternalServerError: Internal Server Error
+graphiti      temporal-reasoning       gpt4_7a0daae1      ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='1 week' got=''
+Retrying after error (attempt 1/2): Internal Server Error
+Retrying after error (attempt 2/2): Internal Server Error
+Max retries (2) exceeded. Last error: Internal Server Error
+anthropic.InternalServerError: Internal Server Error
+graphiti      temporal-reasoning       b9cfe692           ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='5.5 weeks' got=''
+Retrying after error (attempt 1/2): Internal Server Error
+Retrying after error (attempt 2/2): Internal Server Error
+Max retries (2) exceeded. Last error: Internal Server Error
+anthropic.InternalServerError: Internal Server Error
+graphiti      multi-session            21d02d0d           ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='2' got=''
+Retrying after error (attempt 1/2): Internal Server Error
+Retrying after error (attempt 2/2): Internal Server Error
+graphiti      multi-session            gpt4_372c3eed      no  ingest  1176.0s $0.0730 | query   3.9s $0.0006 | gold='10 years' got='10'
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+graphiti      multi-session            gpt4_2ba83207      ERR ingest     0.0s $0.0041 | query   0.0s $0.0000 | gold='Thrive Market' got=''
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+graphiti      multi-session            b5ef892d           ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='8 days.' got=''
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+graphiti      single-session-user      e01b8e2f           ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='Hawaii' got=''
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+graphiti      single-session-user      60d45044           ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='Japanese short-grain rice' got=''
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+graphiti      single-session-user      19b5f2b3           ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='two weeks' got=''
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+graphiti      single-session-assistant dc439ea3           ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='Hoop Dance' got=''
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+graphiti      single-session-assistant 7a8d0b71           ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='$2,000' got=''
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+graphiti      abstention               19b5f2b3_abs       ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='You did not mention this infor' got=''
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+graphiti      abstention               gpt4_70e84552_abs  ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='The information provided is no' got=''
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+Error executing Neo4j query: Couldn't connect to 127.0.0.1:57687 (resolved to ('127.0.0.1:57687',)):
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 57687)
+graphiti      abstention               982b5123_abs       ERR ingest     0.0s $0.0000 | query   0.0s $0.0000 | gold='The information provided is no' got=''
+psycopg.OperationalError: connection failed: connection to server at "127.0.0.1", port 55432 failed: could not receive data from server: Connection refused
+DONE
